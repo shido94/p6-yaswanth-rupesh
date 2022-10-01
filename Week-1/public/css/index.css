@@ -1,0 +1,136 @@
+@import url(https://fonts.googleapis.com/css2?family=Lato);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    overflow-x: hidden;
+    font-family: 'Lato';
+}
+
+a {
+    text-decoration: none;
+    color: #43689b;
+}
+
+
+/* Header */
+
+.sidebar {
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    width: 30px;
+}
+
+.content {
+    height: 90vh;
+    display: flex;
+}
+
+.header {
+    display: flex;
+    background-color: #454545;
+    color: white;
+    height: 44%;
+    padding: 40px;
+}
+
+
+.data {
+    width: 100%;
+
+}
+
+
+.header .song-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 50px;
+}
+
+.song-content .song-info .artist {
+    margin-top: 10px;
+}
+
+.action i {
+    margin-right: 20px;
+}
+
+/* Content */
+
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.table {
+    margin-top: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.table td {
+    padding: 8px;
+}
+
+.table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.table a {
+    border: 1px solid #444444;
+}
+
+/* .table tr:hover {
+    background-color: #ddd;
+} */
+
+/*
+#customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #04AA6D;
+    color: white;
+} */
+
+
+
+/* Footer */
+
+
+.footer {
+    display: flex;
+    background-color: #43689b;
+    color: white;
+    padding: 6px;
+    height: 10vh;
+    width: 100%;
+
+}
+
+.footer-content {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 100%;
+    align-items: center;
+    margin-left: 5px;
+}
+
+.footer-action i {
+    margin-left: 10rem;
+}
