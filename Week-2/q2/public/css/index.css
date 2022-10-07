@@ -1,0 +1,83 @@
+@import url(https://fonts.googleapis.com/css2?family=Lato);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    overflow-x: hidden;
+    font-family: 'Lato';
+    height: 100%;
+}
+
+
+/** Boxes CSS */
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.boxes {
+    display: flex;
+    width: 200px;
+    flex-wrap: wrap;
+    position: absolute;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    transition-property: transform;
+    transition-duration: 2s;
+    transition-timing-function: ease;
+}
+
+.boxes:hover #box1 {
+    transform: rotate(90deg)
+}
+
+.boxes:hover #box2 {
+    transform: rotate(-90deg)
+}
+
+.boxes:hover #box3 {
+    transform: rotate(-90deg)
+}
+
+.boxes:hover #box4 {
+    transform: rotate(90deg)
+}
+
+
+#box1 {
+    background-color: red;
+    transform-origin: top left;
+}
+
+
+#box2 {
+    background-color: yellow;
+    transform-origin: top right;
+
+}
+
+#box3 {
+    background-color: blue;
+    transform-origin: bottom left;
+}
+
+#box4 {
+    background-color: green;
+    transform-origin: bottom right;
+}
+
+/* Text CSS */
+
+.text p {
+    font-size: 2rem;
+}
