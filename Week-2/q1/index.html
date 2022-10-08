@@ -51,7 +51,7 @@
             </div>
             <div class="image">
                 <div>
-                    <img src="./public/images/blog.jpg" alt="" class="song-img">
+                    <img src="./public/images/blog.jpg" alt="image of writing with a pen" class="song-img">
                 </div>
             </div>
             <div>
@@ -82,7 +82,7 @@
             </div>
         </div>
         <div class="form">
-            <form id="form">
+            <form id="form" action="#">
 
                 <div class="form-control">
                     <label>
@@ -91,13 +91,13 @@
 
                     <div class="radio">
                         <label for="mr">
-                            <input type="radio" id="mr" name="mr">Mr</input>
+                            <input type="radio" checked id="mr" name="gender">Mr</input>
                         </label>
                         <label for="mrs">
-                            <input type="radio" id="mrs" name="mrs">Mrs</input>
+                            <input type="radio" id="mrs" name="gender">Mrs</input>
                         </label>
                         <label for="miss">
-                            <input type="radio" id="miss" name="miss">Miss</input>
+                            <input type="radio" id="miss" name="gender">Miss</input>
                         </label>
                     </div>
 
@@ -107,7 +107,8 @@
                     <label for="fname" id="label-fname">
                         First name
                     </label>
-                    <input type="text" id="fname" placeholder="Enter your first name" />
+                    <input type="text" id="fname" required placeholder="Enter your first name" />
+                    <span class="error" aria-live="polite"></span>
                 </div>
 
                 <div class="form-control">
@@ -115,7 +116,7 @@
                         Last Name
                     </label>
 
-                    <input type="text" id="lname" placeholder="Enter your last name" />
+                    <input type="text" id="lname" required placeholder="Enter your last name" />
                 </div>
 
                 <div class="form-control">
@@ -123,7 +124,7 @@
                         Email
                     </label>
 
-                    <input type="email" id="email" placeholder="Enter your email" />
+                    <input type="email" id="email" required placeholder="Enter your email" />
                 </div>
 
                 <div class="form-control">
@@ -131,7 +132,7 @@
                         Phone Number
                     </label>
 
-                    <input type="text" id="phone" placeholder="Enter your phone number" />
+                    <input type="text" id="phone" required placeholder="Enter your phone number" />
                 </div>
 
                 <div class="form-control">
@@ -139,7 +140,7 @@
                         Password
                     </label>
 
-                    <input type="password" id="password" placeholder="Enter your password" />
+                    <input type="password" id="password" required placeholder="Enter your password" />
                 </div>
 
                 <div class="form-control">
@@ -147,7 +148,7 @@
                         Confirm Password
                     </label>
 
-                    <input type="password" id="conf-password" placeholder="Confirm your password" />
+                    <input type="password" id="conf-password" required placeholder="Confirm your password" />
                 </div>
                 <div class="form-control">
                     <label for="country" id="label-country">
@@ -155,7 +156,7 @@
                     </label>
 
                     <!-- Dropdown options -->
-                    <select name="country" id="country">
+                    <select name="country" id="country" required>
                         <option value="canada">Canada</option>
                         <option value="india">India</option>
                         <option value="pakistan">
@@ -167,7 +168,7 @@
 
                 <div class="form-control">
                     <label for="term">
-                        <input type="checkbox" name="term">I agree to the terms and conditions</input>
+                        <input type="checkbox" required name="term">I agree to the terms and conditions</input>
                     </label>
                 </div>
 
