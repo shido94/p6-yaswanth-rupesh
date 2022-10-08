@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CattyBoard</title>
+    <title>Blog</title>
     <link rel="stylesheet"
         href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
 
@@ -14,92 +14,187 @@
 </head>
 
 <body>
-
-    <div class="content">
-
-        <!-- sidebar icons listing -->
-        <div class="sidebar">
-            <i class="las la-bars"></i>
-            <i class="las la-home"></i>
-            <i class="las la-search"></i>
-            <i class="las la-volume-up"></i>
-            <i class="las la-user"></i>
-            <i class="lab la-spotify"></i>
-            <i class="las la-cog"></i>
-            <i class="lab la-soundcloud"></i>
-        </div>
-
-
-        <div class="data">
+    <header>
+        <div class="content">
             <div class="header">
-                <img src="./public/images/board.jpg" alt="" class="song-img">
-                <div class="song-content">
-                    <div class="song-info">
-                        <h3 class="title">CattyBoard Top 100 Single Charts (11.06.36)</h3>
-                        <p class="artist">Unknown Artist</p>
-                        <p>2016.Charts. 100 songs</p>
-                    </div>
-                    <div class="action">
-                        <i class="las la-play">Play all</i>
-                        <i class="las la-plus">Add to</i>
-                        <i class="las la-ellipsis-h">More</i>
-                    </div>
+                <h4>
+                    Lorem Ipsum
+                </h4>
+            </div>
+            <div class="desc header">
+                <h5>
+                    "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur,
+                    adipisci velit..."
+                </h5>
+                <h5>
+                    "There is no one who loves pain itself, who seeks after it and wants to have it, simply because it
+                    is
+                    pain..."
+                </h5>
+
+
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="wrapper">
+            <div>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
+                into electronic typesetting
+            </div>
+            <div>
+                It is a long established fact that a reader will be distracted by the readable content of a page when
+                looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution
+                of letters
+            </div>
+            <div class="image">
+                <div>
+                    <img src="./public/images/blog.jpg" alt="" class="song-img">
                 </div>
             </div>
-
-            <!-- songs listing -->
-            <div class="container">
-                <table class="table">
-                    <tr>
-                        <td>1. One Dance</td>
-                        <td>Crake feat Catkid & Cyla</td>
-                        <td>2:54</td>
-                        <td><a href="#">CATTY CLOUD SYNC</a></td>
-                    </tr>
-                    <tr>
-                        <td>2. Panda</td>
-                        <td>Cattee</td>
-                        <td>4:06</td>
-                        <td><a href="#">CATTY CLOUD SYNC</a></td>
-                    </tr>
-                    <tr>
-                        <td>3. Can't Stop the Feeling!</td>
-                        <td>Catin Cimberlake</td>
-                        <td>3:56</td>
-                        <td><a href="#">CATTY CLOUD SYNC</a></td>
-                    </tr>
-                    <tr>
-                        <td>4. Work From Home</td>
-                        <td>Cat Harmony feat Colla</td>
-                        <td>3:34</td>
-                        <td><a href="#">CATTY CLOUD SYNC</a></td>
-                    </tr>
-
-                </table>
+            <div>
+                <div class="title">
+                    <b>Why do we use it?</b>
+                </div>
+                <div class="desc">
+                    It is a long established fact that a reader will be distracted by the readable content of a page
+                    when
+                    looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
+                    distribution
+                    of letters, as opposed to using 'Content here, content here', making it look like readable English.
+                </div>
 
             </div>
+            <div>
+                <div class="title">
+                    <b> Where can I get some?</b>
+                </div>
+                <div class="desc">
+                    It is a long established fact that a reader will be distracted by the readable content of a page
+                    when
+                    looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
+                    distribution
+                    of letters, as opposed to using 'Content here, content here', making it look like readable English.
+                </div>
+
+            </div>
+        </div>
+        <div class="form">
+            <form id="form">
+
+                <div class="form-control">
+                    <label>
+                        Title
+                    </label>
+
+                    <div class="radio">
+                        <label for="mr">
+                            <input type="radio" id="mr" name="mr">Mr</input>
+                        </label>
+                        <label for="mrs">
+                            <input type="radio" id="mrs" name="mrs">Mrs</input>
+                        </label>
+                        <label for="miss">
+                            <input type="radio" id="miss" name="miss">Miss</input>
+                        </label>
+                    </div>
+
+                </div>
+
+                <div class="form-control">
+                    <label for="fname" id="label-fname">
+                        First name
+                    </label>
+                    <input type="text" id="fname" placeholder="Enter your first name" />
+                </div>
+
+                <div class="form-control">
+                    <label for="lname" id="label-lname">
+                        Last Name
+                    </label>
+
+                    <input type="text" id="lname" placeholder="Enter your last name" />
+                </div>
+
+                <div class="form-control">
+                    <label for="email" id="label-email">
+                        Email
+                    </label>
+
+                    <input type="email" id="email" placeholder="Enter your email" />
+                </div>
+
+                <div class="form-control">
+                    <label for="phone" id="label-phone">
+                        Phone Number
+                    </label>
+
+                    <input type="text" id="phone" placeholder="Enter your phone number" />
+                </div>
+
+                <div class="form-control">
+                    <label for="password" id="label-paassword">
+                        Password
+                    </label>
+
+                    <input type="password" id="password" placeholder="Enter your password" />
+                </div>
+
+                <div class="form-control">
+                    <label for="age" id="label-conf-password">
+                        Confirm Password
+                    </label>
+
+                    <input type="password" id="conf-password" placeholder="Confirm your password" />
+                </div>
+                <div class="form-control">
+                    <label for="country" id="label-country">
+                        Country
+                    </label>
+
+                    <!-- Dropdown options -->
+                    <select name="country" id="country">
+                        <option value="canada">Canada</option>
+                        <option value="india">India</option>
+                        <option value="pakistan">
+                            Pakistan
+                        </option>
+                    </select>
+                </div>
+
+
+                <div class="form-control">
+                    <label for="term">
+                        <input type="checkbox" name="term">I agree to the terms and conditions</input>
+                    </label>
+                </div>
+
+
+                <!-- Multi-line Text Input Control -->
+                <button type="submit" value="submit">
+                    Submit
+                </button>
+            </form>
         </div>
     </div>
+    <!-- <footer>
+        <div>
+            <p>
+                "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur,
+                adipisci velit..."
+            </p>
+            <p>
+                "There is no one who loves pain itself, who seeks after it and wants to have it, simply because
+                it
+                is
+                pain..."
+            </p>
 
-    <footer>
-        <div class="footer">
-            <img src="./public/images/board.jpg" alt="song image">
-            <div class="footer-content">
-                <div class="song-info">
-                    <h5 class="title">If it Ain't Love</h5>
-                    <p class="artist">Catson Derulo</p>
-                </div>
-                <div class="footer-action">
-                    <i class="las la-step-backward"></i>
-                    <i class="las la-pause"></i>
-                    <i class="las la-step-forward"></i>
-                    <i class="las la-undo-alt"></i>
-                    <i class="las la-random"></i>
-                </div>
-            </div>
+
         </div>
-
-    </footer>
+    </footer> -->
 </body>
 
 </html>
