@@ -1,11 +1,15 @@
-// Write a function called vowelCount which accepts a string and returns a map
-// where the keys are numbers and the values are the count of the vowels in the string
+// // Write a function called vowelCount which accepts a string and returns a map
+// // where the keys are numbers and the values are the count of the vowels in the string
 
 let givenString = 'anyAlikeChar';
 
+function isVowel(char) {
+	return 'aeiou'.includes(char);
+}
+
 function vowelCount(str) {
 	const map = new Map();
-	const vowels = ['a', 'e', 'i', 'o', 'u'];
+	str = str.toLowerCase();
 
 	for (let char of str) {
 		/**
@@ -17,7 +21,7 @@ function vowelCount(str) {
 		 * otherwise increase the count of char
 		 */
 
-		vowels.includes(char)
+		isVowel(char)
 			? map.has(char)
 				? map.set(char, map.get(char) + 1)
 				: map.set(char, 1)
