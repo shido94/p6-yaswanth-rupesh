@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "jest": "^29.2.2"
+  },
+  "name": "week-5",
+  "version": "1.0.0",
+  "main": "main.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
