@@ -14,20 +14,29 @@ class LinkedList {
 		this.head = new Node(data, this.head);
 	}
 
-	reverseLinkedList() {
+	rotateLinkedList(leftRotateCount) {
+		if (leftRotateCount === 0) return;
+
 		let current = this.head;
-		let prev = null;
-		let next;
+		let count = 1;
 
-		while (current != null) {
-			next = current.next;
-			current.next = prev;
-
-			prev = current;
-			current = next;
+		while (count < leftRotateCount && current != null) {
+			current = current.next;
+			count++;
 		}
 
-		this.head = prev;
+		if (current == null) return;
+
+		let leftRotateCountNode = current;
+
+		while (current.next != null) {
+			current = current.next;
+		}
+
+		current.next = this.head;
+
+		this.head = leftRotateCountNode.next;
+		leftRotateCountNode.next = null;
 	}
 
 	// Print data
@@ -44,12 +53,11 @@ class LinkedList {
 }
 
 const ll = new LinkedList();
-ll.insertAtHead(1);
-ll.insertAtHead(2);
-ll.insertAtHead(3);
+ll.insertAtHead(9);
+ll.insertAtHead(8);
+ll.insertAtHead(7);
 ll.insertAtHead(4);
-ll.insertAtHead(5);
-ll.insertAtHead(6);
+ll.insertAtHead(2);
 
 // Our linked List after insertion
 ll.printData();
@@ -57,7 +65,7 @@ ll.printData();
 /**
  * Reverse the link list
  */
-ll.reverseLinkedList();
+ll.rotateLinkedList(3);
 
 /**
  * Print the reversed linked list
