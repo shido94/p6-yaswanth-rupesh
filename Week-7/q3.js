@@ -14,6 +14,10 @@ class LinkedList {
 		this.head = new Node(data, this.head);
 	}
 
+	createLoop() {
+		this.head.next.next.next.next = this.head;
+	}
+
 	detectLoop() {
 		if (!this.head) return false;
 
@@ -50,8 +54,11 @@ ll.insertAtHead(1);
 ll.insertAtHead(3);
 
 /**
- * Reverse the link list
+ * Create loop for testing
  */
-// Our linked List after insertion
-ll.printData();
-console.log(ll.detectLoop(2));
+ll.createLoop();
+
+/**
+ * Detect the loop
+ */
+console.log(ll.detectLoop());
