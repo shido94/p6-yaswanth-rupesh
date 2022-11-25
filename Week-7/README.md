@@ -44,6 +44,26 @@ O(N)
 
 O(1)
 
+## Problem 7.3: Detect loop in a linked list
+
+Given a linked list of N nodes. The task is to check if the linked list has a loop. Linkedlist can contain self loop
+
+### Steps
+
+1. Traverse linked list using two pointers.
+2. Move one pointer(low) by one and another pointer(high) by two.
+3. If these pointers meet at the same node then there is a loop. If pointers do not meet then the linked list doesn’t have a loop
+
+### Complexity
+
+#### Time Complexity:
+
+O(N)
+
+#### Auxiliary Space:
+
+O(1)
+
 ## Problem 7.4: Parenthesis Checker
 
 Given an expression string x. Examine whether the pairs and the orders of“{“,”}”,”(“,”)”,”[“,”]” are correct in exp.For example, the function should return 'true' for exp= “[()]{}{()()}” and 'false' for exp = “[(])”
@@ -72,10 +92,14 @@ Next greater element of an element in the array is the nearest element on the ri
 
 ### Steps
 
-1. Declare a character stack (say temp).
-2. Now traverse the string exp. 1. If the current character is a starting bracket ( ‘(‘ or ‘{‘ or ‘[‘ ) then push it to stack.
-    1. If the current character is a closing bracket ( ‘)’ or ‘}’ or ‘]’ ) then pop from stack and if the popped character is the matching starting bracket then fine. 3. Else brackets are Not Balanced.
-3. After complete traversal, if there is some starting bracket left in stack then Not balanced, elseBalanced.
+1. Push the first element to stack.
+2. Pick the rest of the elements one by one and follow the following steps in the loop.
+    1. Mark the current element as next.
+    2. If the stack is not empty, compare top most element of stack with next.
+    3. If next is greater than the top element, Pop element from the stack. next is the next greater element for the popped element.
+    4. Keep popping from the stack while the popped element is smaller than next. next becomes the next greater element for all such popped elements.
+3. Finally, push the next in the stack.
+4. After the loop in step 2 is over, pop all the elements from the stack and print -1 as the next element for them.
 
 ### Complexity
 
