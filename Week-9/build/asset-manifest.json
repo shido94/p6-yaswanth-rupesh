@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/p6-yaswanth-rupesh/static/css/main.d919a152.css",
+    "main.js": "/p6-yaswanth-rupesh/static/js/main.71b432f8.js",
+    "index.html": "/p6-yaswanth-rupesh/index.html",
+    "main.d919a152.css.map": "/p6-yaswanth-rupesh/static/css/main.d919a152.css.map",
+    "main.71b432f8.js.map": "/p6-yaswanth-rupesh/static/js/main.71b432f8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d919a152.css",
+    "static/js/main.71b432f8.js"
+  ]
+}
